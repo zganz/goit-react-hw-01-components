@@ -1,7 +1,7 @@
 import user from 'components/profile/user.json';
 import data from 'components/statistics/data.json';
-// import friends from 'components/statistics/friends.json';
-// import { friends } from 'components/friendList/FriendList';
+// import friends from 'components/friendList/friends.json';
+// import { FriendList } from 'components/friendList/FriendList';
 import { Profile } from 'components/profile/Profile';
 import { Statistics } from 'components/statistics/Statistics';
 export const App = () => {
@@ -10,6 +10,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -24,8 +25,9 @@ export const App = () => {
         stats={user.stats}
       />
 
-  
       <Statistics title="Upload stats" stats={data} />
+
+      {/* <FriendList friends={friends} /> */}
 
 
     </div>

@@ -1,0 +1,23 @@
+.title{
+    text-align: center;
+    color: blue;
+}
+.statlist{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 10px;
+    border: solid 1px black;
+    
+}
+
+.statistics{
+    border: solid 1px black;
+}
