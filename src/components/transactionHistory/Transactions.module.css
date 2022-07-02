@@ -1,0 +1,10 @@
+.table{
+    border: solid 2px teal;
+}
+
+.head{
+    border: solid 2px teal;
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
+}
