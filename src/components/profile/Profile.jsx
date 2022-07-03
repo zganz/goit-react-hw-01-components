@@ -2,7 +2,6 @@
 import styles from './Profile.module.css'
 import PropTypes  from "prop-types";
 export const Profile = ({  avatar, username, tag, location, stats }) => {
-  console.log(username)
     return (
         <div className={styles.profile}>
         <div className={styles.description}>
@@ -35,9 +34,9 @@ export const Profile = ({  avatar, username, tag, location, stats }) => {
   };
   
   Profile.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    stats:PropTypes.objectOf(PropTypes.number).isRequired,  
+    avatar: PropTypes.string,
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    stats:PropTypes.objectOf(PropTypes.number) 
   };

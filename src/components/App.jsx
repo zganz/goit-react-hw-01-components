@@ -8,7 +8,7 @@ import { Profile } from 'components/profile/Profile';
 import { Statistics } from 'components/statistics/Statistics';
 export const App = () => {
   return (
-    <div className='container'
+    <div
       style={{
         // height: '100vh',
         display: 'flex',

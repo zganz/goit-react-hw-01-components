@@ -1,5 +1,6 @@
 import styles from './FriendList.module.css'
-export const FriendList = props => {
+export const FriendList = (props) => {
+    console.log(props)
     const onlineStyle = styles.status + ' ' + styles.is_online;
     const offlineStyle = styles.status + ' ' + styles.is_offline;
       return (
@@ -14,7 +15,10 @@ export const FriendList = props => {
            
         
         </ul>
+        
 
 
         );
     };
+
+    
