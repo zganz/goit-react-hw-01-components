@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from './Stat.module.css'
 export const Statistics = props => {
     return (
@@ -17,4 +18,8 @@ export const Statistics = props => {
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 }

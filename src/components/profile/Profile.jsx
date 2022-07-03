@@ -2,7 +2,7 @@
 import styles from './Profile.module.css'
 import PropTypes  from "prop-types";
 export const Profile = ({  avatar, username, tag, location, stats }) => {
-  console.log(username)
+  console.log(stats)
     return (
         <div className={styles.profile}>
         <div className={styles.description}>
